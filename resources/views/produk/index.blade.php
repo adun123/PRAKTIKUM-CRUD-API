@@ -116,14 +116,14 @@
             data.forEach(produk => {
                 const row = `
                     <tr>
-                        <td>${produk.nama_produk}</td>
-                        <td><img src="${produk.gambar_produk}" class="img-thumbnail" style="height: 50px;" alt="gambar"></td>
-                        <td>${produk.tgl_pembuatan}</td>
-                        <td>${produk.tgl_kadaluarsa}</td>
-                        <td>${produk.kategori_produk}</td>
-                        <td>${produk.nama_mitra}</td>
-                        <td class="text-center">
-                            <button onclick="hapusProduk(${produk.id})" class="btn btn-danger btn-sm">Hapus</button>
+                        <td class="border px-4 py-2">${produk.nama_produk}</td>
+                        <td class="border px-4 py-2"><img src="${produk.gambar_produk}" class="h-12" alt="gambar"></td>
+                        <td class="border px-4 py-2">${produk.tgl_pembuatan}</td>
+                        <td class="border px-4 py-2">${produk.tgl_kadaluarsa}</td>
+                        <td class="border px-4 py-2">${produk.kategori_produk}</td>
+                        <td class="border px-4 py-2">${produk.nama_mitra}</td>
+                        <td class="border px-4 py-2 text-center">
+                            <button onclick="hapusProduk(${produk.id})" class="text-red-600 hover:underline">Hapus</button>
                         </td>
                     </tr>
                 `;
@@ -174,5 +174,3 @@
         fetchProduk();
     </script>
 
-</body>
-</html>
